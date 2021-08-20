@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Webpack App</title>
+        <style>
+            .form {
+                padding: 20px;
+                background-color: #1f2227;
+                min-height: 500px;
+                color: #e64d43;
+            }
+
+            .tags {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                width: 40%;
+                padding: 8px;
+            }
+
+            .input {
+                width: 40%;
+                outline: none;
+                padding: 8px;
+            }
+
+            .comp {
+                display: flex;
+                color: #fff;
+                position: relative;
+                border: 1px solid lightgray;
+                border-radius: 5px;
+                padding: 5px 40px 5px 10px;
+                background-color: green;
+            }
+
+            .close {
+                position: absolute;
+                background-color: transparent;
+                border: none;
+                right: 5px;
+                top: 3px;
+                font-size: 18px;
+                color: #1f2227;
+                cursor: pointer;
+            }
+
+            .add {
+                padding: 10px 25px;
+                margin-left: 10px;
+                border-radius: 5px;
+                border: none;
+                background-color: #e64d43;
+                font-weight: 700;
+                color: #fff;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="form">
+            <div class="box">
+                <input class="input" type="text" placeholder="Add tags separated by spaces">
+                <button class="add">Save</button>
+            </div>
+
+            <div class="tags"></div>
+            <input type="checkbox" onchange="tagsCreator.changeReadonly(this)"> ReadOnly
+        </div>
+    </body>
+    
+</html>
